@@ -14,14 +14,14 @@
 	</properties>
 
 	<dependencies>
-	                                          <!-- SPRING -->
+		<!-- SPRING -->
 		<!-- spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		                                       <!-- JAVA EE -->
+		<!-- JAVA EE -->
 		<!-- It generally used to resolve the error of HttpServelt super class 
 			is not found in the build path. Generally this javaee-api is provided in 
 			java web container or runtime environment such as Apache Tomcat. But it causes 
@@ -33,7 +33,7 @@
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		                                          <!-- JUNIT -->
+		<!-- JUNIT -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
