@@ -4,15 +4,11 @@
 	version="3.1">
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
-		<servlet-name>Despatcher</servlet-name>
+		<servlet-name>despatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value></param-value>
-		</init-param>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Despatcher</servlet-name>
+		<servlet-name>despatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 </web-app>
