@@ -24,25 +24,35 @@
 </head>
 
 <body>
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
-	<!-- Navigation -->
+	<div class="wrapper">
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
+		<!-- Navigation -->
 
+		<div class="content">
+			<!-- Page Content -->
+			<c:if test="${userClickHome==true}">
+				<%@include file="home.jsp"%>
+			</c:if>
+			<c:if test="${userClickAbout==true}">
+				<%@include file="about.jsp"%>
+			</c:if>
+			<c:if test="${userClickContact==true}">
+				<%@include file="contact.jsp"%>
+			</c:if>
+			<!-- Page Content -->
+		</div>
 
-	<!-- Page Content -->
-	<c:if test="${userClickHome=true}">
-	  <%@include file="home.jsp" %>
-	</c:if>
-	<!-- Page Content -->
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
+		<!-- Footer -->
 
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp" %>
-	<!-- Footer -->
-	
-	<!-- Bootstrap core JavaScript -->
-	<script src="${js}/jquery.js"></script>
-	<script src="${js}/bootstrap.min.js"></script>
-	<script src="${js}/bootstrap.bundle.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="${js}/jquery.js"></script>
+		<script src="${js}/myapp.js"></script>
+		<script src="${js}/bootstrap.min.js"></script>
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+	</div>
 </body>
 
 </html>
